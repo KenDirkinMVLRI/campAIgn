@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Strategy Presentation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+        .slide-container {
+            min-height: 500px;
+        }
+        .slide {
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        .slide.active {
+            display: block;
+        }
+        .bullet-point-item::before {
+            content: "•";
+            color: #3b82f6;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+    <div id="presentation-container" class="bg-white rounded-3xl shadow-2xl p-8 lg:p-12 w-full max-w-4xl mx-auto border-4 border-blue-500">
+        
+        <!-- Presentation Header -->
+        <div class="flex justify-between items-center mb-6">
+            <div class="text-xs sm:text-sm md:text-base font-semibold text-gray-500" id="slide-counter"></div>
+            <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-800 text-center flex-1">
+                The "AI as the Gateway Drug" Strategy
+            </h1>
+            <div class="w-16"></div> <!-- Spacer -->
+        </div>
+
+        <!-- Slide Content -->
+        <div id="slides-wrapper" class="slide-container relative overflow-hidden p-4">
+            
+            <!-- Slide 1: Title & Core Play -->
+            <div class="slide active" id="slide-1">
+                <div class="text-center">
+                    <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">The Core Play</h2>
+                    <p class="text-lg sm:text-xl text-gray-700 leading-relaxed">
+                        Use AI consulting as your **wedge** into comprehensive transformation services. Districts desperately need AI help NOW. This urgent need gets you in the door for small projects that naturally expand to comprehensive engagements.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Slide 2: Three-Step Execution -->
+            <div class="slide" id="slide-2">
+                <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 text-center">Three-Step Execution</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-blue-50 p-6 rounded-2xl shadow-md border-t-4 border-blue-500">
+                        <h3 class="font-bold text-xl sm:text-2xl text-blue-700 mb-2">1. Land</h3>
+                        <p class="text-gray-600 mb-2">Launch "AI Essentials" at accessible price points. Build credibility through quick wins and visible success stories.</p>
+                    </div>
+                    <div class="bg-blue-50 p-6 rounded-2xl shadow-md border-t-4 border-blue-500">
+                        <h3 class="font-bold text-xl sm:text-2xl text-blue-700 mb-2">2. Expand</h3>
+                        <p class="text-gray-600 mb-2">Convert initial AI clients to broader services (strategic planning, leadership development). Launch subscription platforms.</p>
+                    </div>
+                    <div class="bg-blue-50 p-6 rounded-2xl shadow-md border-t-4 border-blue-500">
+                        <h3 class="font-bold text-xl sm:text-2xl text-blue-700 mb-2">3. Lead</h3>
+                        <p class="text-gray-600 mb-2">Position as Michigan's premier education transformation partner. Majority of revenue from comprehensive services.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: Marketing Campaign & Phases -->
+            <div class="slide" id="slide-3">
+                <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 text-center">Marketing Campaign: "AI Isn't Scary. Being Left Behind Is."</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="flex flex-col bg-gray-50 p-6 rounded-2xl shadow-md">
+                        <h3 class="font-bold text-xl text-gray-800 mb-2">Phase 1: DISRUPT</h3>
+                        <p class="text-gray-600 mb-4">"The AI Wake-Up Call"</p>
+                        <p class="text-sm text-gray-500 italic">Content Shock Strategy, Fear-to-Action Tactics</p>
+                    </div>
+                    <div class="flex flex-col bg-gray-50 p-6 rounded-2xl shadow-md">
+                        <h3 class="font-bold text-xl text-gray-800 mb-2">Phase 2: DEMONSTRATE</h3>
+                        <p class="text-gray-600 mb-4">"See It In Action"</p>
+                        <p class="text-sm text-gray-500 italic">Success Story Blitz, Try-Before-You-Buy</p>
+                    </div>
+                    <div class="flex flex-col bg-gray-50 p-6 rounded-2xl shadow-md">
+                        <h3 class="font-bold text-xl text-gray-800 mb-2">Phase 3: DOMINATE</h3>
+                        <p class="text-gray-600 mb-4">"The Movement Has Started"</p>
+                        <p class="text-sm text-gray-500 italic">FOMO Creation, Community Building</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4: Key Campaign Assets -->
+            <div class="slide" id="slide-4">
+                <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 text-center">Key Campaign Assets</h2>
+                <ul class="text-lg text-gray-700 space-y-4">
+                    <li class="bullet-point-item">
+                        <span class="font-bold">Hero Asset:</span> "The Michigan Educator's Guide to AI" (50-page definitive resource)
+                    </li>
+                    <li class="bullet-point-item">
+                        <span class="font-bold">Assessment Tool:</span> "Is Your District AI-Ready?" (interactive quiz)
+                    </li>
+                    <li class="bullet-point-item">
+                        <span class="font-bold">Calculator:</span> "AI ROI Calculator for Schools" (shows time/money saved)
+                    </li>
+                    <li class="bullet-point-item">
+                        <span class="font-bold">Comparison Chart:</span> "AI Tools for Education: What's Safe, What's Not"
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Slide 5: The Psychology Play & Bottom Line -->
+            <div class="slide" id="slide-5">
+                <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 text-center">The Psychology Play & Bottom Line</h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="font-bold text-xl text-blue-600 mb-2">Sell Confidence, Not Consulting</h3>
+                        <ul class="text-gray-700 space-y-2">
+                            <li class="bullet-point-item">Build Trust Through Transparency</li>
+                            <li class="bullet-point-item">Create Urgency Without Panic</li>
+                            <li class="bullet-point-item">Make It About Them: their students, their teachers, their future</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="text-xl text-gray-800 leading-relaxed font-semibold">
+                            AI is just the conversation starter for your real value proposition: making Michigan Virtual the essential partner for educational transformation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="flex justify-between mt-8">
+            <button id="prev-btn" class="px-6 py-3 bg-blue-100 text-blue-600 font-bold rounded-full shadow-lg hover:bg-blue-200 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">Previous</button>
+            <button id="next-btn" class="px-6 py-3 bg-blue-600 text-white font-bold rounded-full shadow-lg hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">Next</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Get all slides and navigation buttons
+            const slides = document.querySelectorAll('.slide');
+            const nextBtn = document.getElementById('next-btn');
+            const prevBtn = document.getElementById('prev-btn');
+            const slideCounter = document.getElementById('slide-counter');
+            
+            // Set the initial slide index
+            let currentSlideIndex = 0;
+            const totalSlides = slides.length;
+
+            /**
+             * Updates the visibility of slides and the state of navigation buttons.
+             */
+            const updateSlideDisplay = () => {
+                // Remove 'active' class from all slides
+                slides.forEach(slide => slide.classList.remove('active'));
+                
+                // Add 'active' class to the current slide
+                slides[currentSlideIndex].classList.add('active');
+                
+                // Update the slide counter
+                slideCounter.textContent = `Slide ${currentSlideIndex + 1} of ${totalSlides}`;
+                
+                // Disable/enable navigation buttons based on the current slide index
+                prevBtn.disabled = currentSlideIndex === 0;
+                nextBtn.disabled = currentSlideIndex === totalSlides - 1;
+            };
+
+            // Event listener for the "Next" button
+            nextBtn.addEventListener('click', () => {
+                if (currentSlideIndex < totalSlides - 1) {
+                    currentSlideIndex++;
+                    updateSlideDisplay();
+                }
+            });
+
+            // Event listener for the "Previous" button
+            prevBtn.addEventListener('click', () => {
+                if (currentSlideIndex > 0) {
+                    currentSlideIndex--;
+                    updateSlideDisplay();
+                }
+            });
+
+            // Initial call to set up the presentation
+            updateSlideDisplay();
+        });
+    </script>
+</body>
+</html>
